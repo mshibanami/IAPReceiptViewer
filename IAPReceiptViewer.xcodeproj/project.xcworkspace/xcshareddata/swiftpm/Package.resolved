@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ASN1Swift",
+        "repositoryURL": "https://github.com/tikhop/ASN1Swift",
+        "state": {
+          "branch": null,
+          "revision": "b53bee03a942623db25afc5bfb80227b2cb3b425",
+          "version": "1.2.4"
+        }
+      },
+      {
+        "package": "TPInAppReceipt",
+        "repositoryURL": "https://github.com/mshibanami/TPInAppReceipt",
+        "state": {
+          "branch": "make-payload-public",
+          "revision": "dad808b82d0c035458003bafa9d64b79f72c31a5",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

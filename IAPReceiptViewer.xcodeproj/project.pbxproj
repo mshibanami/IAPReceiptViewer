@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0081988226912B0800DA1360 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0081988126912B0800DA1360 /* WebView.swift */; };
+		00CBDDA8268DC1620008DDE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CBDDA7268DC1620008DDE1 /* AppDelegate.swift */; };
+		00CBDDAA268DC1620008DDE1 /* ReceiptSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CBDDA9268DC1620008DDE1 /* ReceiptSelectionView.swift */; };
+		00CBDDAC268DC1630008DDE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00CBDDAB268DC1630008DDE1 /* Assets.xcassets */; };
+		00CBDDAF268DC1630008DDE1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00CBDDAE268DC1630008DDE1 /* Preview Assets.xcassets */; };
+		00CBDDB7268DC1D60008DDE1 /* TPInAppReceipt in Frameworks */ = {isa = PBXBuildFile; productRef = 00CBDDB6268DC1D60008DDE1 /* TPInAppReceipt */; };
+		00CBDDB9268DC1D60008DDE1 /* TPInAppReceipt-Objc in Frameworks */ = {isa = PBXBuildFile; productRef = 00CBDDB8268DC1D60008DDE1 /* TPInAppReceipt-Objc */; };
+		00CBDDBD268DC3B20008DDE1 /* ParentWindowKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CBDDBC268DC3B20008DDE1 /* ParentWindowKey.swift */; };
+		00CBDDC5268DC5EC0008DDE1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CBDDC4268DC5EC0008DDE1 /* main.swift */; };
+		00CBDDCB268DCAF60008DDE1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CBDDCA268DCAF60008DDE1 /* main.swift */; };
+		00CBDDCD268DCBD90008DDE1 /* ReceiptDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CBDDCC268DCBD90008DDE1 /* ReceiptDecoder.swift */; };
+		00CBDDCF268DE5080008DDE1 /* MainMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CBDDCE268DE5080008DDE1 /* MainMenuManager.swift */; };
+		00CBDDD1268DE63E0008DDE1 /* ReceiptViewerWindowsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CBDDD0268DE63E0008DDE1 /* ReceiptViewerWindowsManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		00CBDDC0268DC5EC0008DDE1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0081988026902BB600DA1360 /* IAPReceiptViewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IAPReceiptViewer.entitlements; sourceTree = "<group>"; };
+		0081988126912B0800DA1360 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		00CBDDA4268DC1620008DDE1 /* IAPReceiptViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IAPReceiptViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00CBDDA7268DC1620008DDE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		00CBDDA9268DC1620008DDE1 /* ReceiptSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptSelectionView.swift; sourceTree = "<group>"; };
+		00CBDDAB268DC1630008DDE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00CBDDAE268DC1630008DDE1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		00CBDDBC268DC3B20008DDE1 /* ParentWindowKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentWindowKey.swift; sourceTree = "<group>"; };
+		00CBDDC2268DC5EC0008DDE1 /* IAPReceiptViewerCLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = IAPReceiptViewerCLI; sourceTree = BUILT_PRODUCTS_DIR; };
+		00CBDDC4268DC5EC0008DDE1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		00CBDDCA268DCAF60008DDE1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		00CBDDCC268DCBD90008DDE1 /* ReceiptDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptDecoder.swift; sourceTree = "<group>"; };
+		00CBDDCE268DE5080008DDE1 /* MainMenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuManager.swift; sourceTree = "<group>"; };
+		00CBDDD0268DE63E0008DDE1 /* ReceiptViewerWindowsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewerWindowsManager.swift; sourceTree = "<group>"; };
+		00CBDDD2268DE8AF0008DDE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00CBDDA1268DC1620008DDE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00CBDDB9268DC1D60008DDE1 /* TPInAppReceipt-Objc in Frameworks */,
+				00CBDDB7268DC1D60008DDE1 /* TPInAppReceipt in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00CBDDBF268DC5EC0008DDE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00CBDD9B268DC1620008DDE1 = {
+			isa = PBXGroup;
+			children = (
+				00CBDDA6268DC1620008DDE1 /* IAPReceiptViewer */,
+				00CBDDC3268DC5EC0008DDE1 /* IAPReceiptViewerCLI */,
+				00CBDDA5268DC1620008DDE1 /* Products */,
+			);
+			indentWidth = 4;
+			sourceTree = "<group>";
+			tabWidth = 4;
+		};
+		00CBDDA5268DC1620008DDE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00CBDDA4268DC1620008DDE1 /* IAPReceiptViewer.app */,
+				00CBDDC2268DC5EC0008DDE1 /* IAPReceiptViewerCLI */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00CBDDA6268DC1620008DDE1 /* IAPReceiptViewer */ = {
+			isa = PBXGroup;
+			children = (
+				0081988026902BB600DA1360 /* IAPReceiptViewer.entitlements */,
+				00CBDDD2268DE8AF0008DDE1 /* Info.plist */,
+				00CBDDA7268DC1620008DDE1 /* AppDelegate.swift */,
+				00CBDDA9268DC1620008DDE1 /* ReceiptSelectionView.swift */,
+				00CBDDBC268DC3B20008DDE1 /* ParentWindowKey.swift */,
+				00CBDDAB268DC1630008DDE1 /* Assets.xcassets */,
+				00CBDDAD268DC1630008DDE1 /* Preview Content */,
+				00CBDDCA268DCAF60008DDE1 /* main.swift */,
+				00CBDDCC268DCBD90008DDE1 /* ReceiptDecoder.swift */,
+				00CBDDCE268DE5080008DDE1 /* MainMenuManager.swift */,
+				00CBDDD0268DE63E0008DDE1 /* ReceiptViewerWindowsManager.swift */,
+				0081988126912B0800DA1360 /* WebView.swift */,
+			);
+			path = IAPReceiptViewer;
+			sourceTree = "<group>";
+		};
+		00CBDDAD268DC1630008DDE1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				00CBDDAE268DC1630008DDE1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		00CBDDC3268DC5EC0008DDE1 /* IAPReceiptViewerCLI */ = {
+			isa = PBXGroup;
+			children = (
+				00CBDDC4268DC5EC0008DDE1 /* main.swift */,
+			);
+			path = IAPReceiptViewerCLI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00CBDDA3268DC1620008DDE1 /* IAPReceiptViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00CBDDB2268DC1630008DDE1 /* Build configuration list for PBXNativeTarget "IAPReceiptViewer" */;
+			buildPhases = (
+				00CBDDA0268DC1620008DDE1 /* Sources */,
+				00CBDDA1268DC1620008DDE1 /* Frameworks */,
+				00CBDDA2268DC1620008DDE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IAPReceiptViewer;
+			packageProductDependencies = (
+				00CBDDB6268DC1D60008DDE1 /* TPInAppReceipt */,
+				00CBDDB8268DC1D60008DDE1 /* TPInAppReceipt-Objc */,
+			);
+			productName = IAPReceiptViewer;
+			productReference = 00CBDDA4268DC1620008DDE1 /* IAPReceiptViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00CBDDC1268DC5EC0008DDE1 /* IAPReceiptViewerCLI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00CBDDC6268DC5EC0008DDE1 /* Build configuration list for PBXNativeTarget "IAPReceiptViewerCLI" */;
+			buildPhases = (
+				00CBDDBE268DC5EC0008DDE1 /* Sources */,
+				00CBDDBF268DC5EC0008DDE1 /* Frameworks */,
+				00CBDDC0268DC5EC0008DDE1 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IAPReceiptViewerCLI;
+			productName = IAPReceiptViewerCLI;
+			productReference = 00CBDDC2268DC5EC0008DDE1 /* IAPReceiptViewerCLI */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00CBDD9C268DC1620008DDE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					00CBDDA3268DC1620008DDE1 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					00CBDDC1268DC5EC0008DDE1 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 00CBDD9F268DC1620008DDE1 /* Build configuration list for PBXProject "IAPReceiptViewer" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00CBDD9B268DC1620008DDE1;
+			packageReferences = (
+				00CBDDB5268DC1D60008DDE1 /* XCRemoteSwiftPackageReference "TPInAppReceipt" */,
+			);
+			productRefGroup = 00CBDDA5268DC1620008DDE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00CBDDA3268DC1620008DDE1 /* IAPReceiptViewer */,
+				00CBDDC1268DC5EC0008DDE1 /* IAPReceiptViewerCLI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00CBDDA2268DC1620008DDE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00CBDDAF268DC1630008DDE1 /* Preview Assets.xcassets in Resources */,
+				00CBDDAC268DC1630008DDE1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00CBDDA0268DC1620008DDE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00CBDDD1268DE63E0008DDE1 /* ReceiptViewerWindowsManager.swift in Sources */,
+				0081988226912B0800DA1360 /* WebView.swift in Sources */,
+				00CBDDCD268DCBD90008DDE1 /* ReceiptDecoder.swift in Sources */,
+				00CBDDCB268DCAF60008DDE1 /* main.swift in Sources */,
+				00CBDDAA268DC1620008DDE1 /* ReceiptSelectionView.swift in Sources */,
+				00CBDDA8268DC1620008DDE1 /* AppDelegate.swift in Sources */,
+				00CBDDCF268DE5080008DDE1 /* MainMenuManager.swift in Sources */,
+				00CBDDBD268DC3B20008DDE1 /* ParentWindowKey.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00CBDDBE268DC5EC0008DDE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00CBDDC5268DC5EC0008DDE1 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		00CBDDB0268DC1630008DDE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00CBDDB1268DC1630008DDE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		00CBDDB3268DC1630008DDE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = IAPReceiptViewer/IAPReceiptViewer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IAPReceiptViewer/Preview Content\"";
+				DEVELOPMENT_TEAM = ZVWN4UJS9M;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IAPReceiptViewer/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = IAPReceiptViewer;
+				INFOPLIST_KEY_CFBundleName = IAPReceiptViewer;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.mshibanami.IAPReceiptViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		00CBDDB4268DC1630008DDE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = IAPReceiptViewer/IAPReceiptViewer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IAPReceiptViewer/Preview Content\"";
+				DEVELOPMENT_TEAM = ZVWN4UJS9M;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IAPReceiptViewer/Info.plist;
+				INFOPLIST_KEY_CFBundleExecutable = IAPReceiptViewer;
+				INFOPLIST_KEY_CFBundleName = IAPReceiptViewer;
+				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.mshibanami.IAPReceiptViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		00CBDDC7268DC5EC0008DDE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZVWN4UJS9M;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		00CBDDC8268DC5EC0008DDE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZVWN4UJS9M;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00CBDD9F268DC1620008DDE1 /* Build configuration list for PBXProject "IAPReceiptViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00CBDDB0268DC1630008DDE1 /* Debug */,
+				00CBDDB1268DC1630008DDE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00CBDDB2268DC1630008DDE1 /* Build configuration list for PBXNativeTarget "IAPReceiptViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00CBDDB3268DC1630008DDE1 /* Debug */,
+				00CBDDB4268DC1630008DDE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00CBDDC6268DC5EC0008DDE1 /* Build configuration list for PBXNativeTarget "IAPReceiptViewerCLI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00CBDDC7268DC5EC0008DDE1 /* Debug */,
+				00CBDDC8268DC5EC0008DDE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		00CBDDB5268DC1D60008DDE1 /* XCRemoteSwiftPackageReference "TPInAppReceipt" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mshibanami/TPInAppReceipt";
+			requirement = {
+				branch = "make-payload-public";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		00CBDDB6268DC1D60008DDE1 /* TPInAppReceipt */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00CBDDB5268DC1D60008DDE1 /* XCRemoteSwiftPackageReference "TPInAppReceipt" */;
+			productName = TPInAppReceipt;
+		};
+		00CBDDB8268DC1D60008DDE1 /* TPInAppReceipt-Objc */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00CBDDB5268DC1D60008DDE1 /* XCRemoteSwiftPackageReference "TPInAppReceipt" */;
+			productName = "TPInAppReceipt-Objc";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 00CBDD9C268DC1620008DDE1 /* Project object */;
+}
