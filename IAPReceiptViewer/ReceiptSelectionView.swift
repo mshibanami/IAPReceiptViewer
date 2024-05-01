@@ -47,7 +47,7 @@ import TPInAppReceipt
             return
         }
         let panel = NSOpenPanel()
-        panel.allowsMultipleSelection = true
+        panel.allowsMultipleSelection = false
         panel.allowedContentTypes = [.application, .applicationBundle, .applicationExtension]
         panel.directoryURL = URL.applicationDirectory
         panel.beginSheetModal(for: parentWindow) { [weak panel] response in
