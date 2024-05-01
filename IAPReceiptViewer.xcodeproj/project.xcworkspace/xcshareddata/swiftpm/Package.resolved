@@ -1,25 +1,24 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "ASN1Swift",
-        "repositoryURL": "https://github.com/tikhop/ASN1Swift",
-        "state": {
-          "branch": null,
-          "revision": "b53bee03a942623db25afc5bfb80227b2cb3b425",
-          "version": "1.2.4"
-        }
-      },
-      {
-        "package": "TPInAppReceipt",
-        "repositoryURL": "https://github.com/mshibanami/TPInAppReceipt",
-        "state": {
-          "branch": "make-payload-public",
-          "revision": "dad808b82d0c035458003bafa9d64b79f72c31a5",
-          "version": null
-        }
+  "originHash" : "c7e5f8f92f65de1f5cfeaaf3755dec6274c173cdc90fa1dda99d8e962fde38d8",
+  "pins" : [
+    {
+      "identity" : "asn1swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tikhop/ASN1Swift",
+      "state" : {
+        "revision" : "403cd95194e6a962e16db7c0d373d89fce83e0f7",
+        "version" : "1.2.7"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "tpinappreceipt",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tikhop/TPInAppReceipt.git",
+      "state" : {
+        "revision" : "e135055eaeba5a52874b7f9b290f42890cbe981f",
+        "version" : "3.4.1"
+      }
+    }
+  ],
+  "version" : 3
 }

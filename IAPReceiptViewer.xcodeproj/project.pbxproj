@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0081988226912B0800DA1360 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0081988126912B0800DA1360 /* WebView.swift */; };
+		00A16E952BE1E4E5001E643C /* TPInAppReceipt in Frameworks */ = {isa = PBXBuildFile; productRef = 00A16E942BE1E4E5001E643C /* TPInAppReceipt */; };
 		00CBDDA8268DC1620008DDE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CBDDA7268DC1620008DDE1 /* AppDelegate.swift */; };
 		00CBDDAA268DC1620008DDE1 /* ReceiptSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CBDDA9268DC1620008DDE1 /* ReceiptSelectionView.swift */; };
 		00CBDDAC268DC1630008DDE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00CBDDAB268DC1630008DDE1 /* Assets.xcassets */; };
 		00CBDDAF268DC1630008DDE1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00CBDDAE268DC1630008DDE1 /* Preview Assets.xcassets */; };
-		00CBDDB7268DC1D60008DDE1 /* TPInAppReceipt in Frameworks */ = {isa = PBXBuildFile; productRef = 00CBDDB6268DC1D60008DDE1 /* TPInAppReceipt */; };
-		00CBDDB9268DC1D60008DDE1 /* TPInAppReceipt-Objc in Frameworks */ = {isa = PBXBuildFile; productRef = 00CBDDB8268DC1D60008DDE1 /* TPInAppReceipt-Objc */; };
 		00CBDDBD268DC3B20008DDE1 /* ParentWindowKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CBDDBC268DC3B20008DDE1 /* ParentWindowKey.swift */; };
 		00CBDDC5268DC5EC0008DDE1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CBDDC4268DC5EC0008DDE1 /* main.swift */; };
 		00CBDDCB268DCAF60008DDE1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CBDDCA268DCAF60008DDE1 /* main.swift */; };
@@ -57,8 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00CBDDB9268DC1D60008DDE1 /* TPInAppReceipt-Objc in Frameworks */,
-				00CBDDB7268DC1D60008DDE1 /* TPInAppReceipt in Frameworks */,
+				00A16E952BE1E4E5001E643C /* TPInAppReceipt in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,8 +142,7 @@
 			);
 			name = IAPReceiptViewer;
 			packageProductDependencies = (
-				00CBDDB6268DC1D60008DDE1 /* TPInAppReceipt */,
-				00CBDDB8268DC1D60008DDE1 /* TPInAppReceipt-Objc */,
+				00A16E942BE1E4E5001E643C /* TPInAppReceipt */,
 			);
 			productName = IAPReceiptViewer;
 			productReference = 00CBDDA4268DC1620008DDE1 /* IAPReceiptViewer.app */;
@@ -196,7 +193,7 @@
 			);
 			mainGroup = 00CBDD9B268DC1620008DDE1;
 			packageReferences = (
-				00CBDDB5268DC1D60008DDE1 /* XCRemoteSwiftPackageReference "TPInAppReceipt" */,
+				00A16E932BE1E4E5001E643C /* XCRemoteSwiftPackageReference "TPInAppReceipt" */,
 			);
 			productRefGroup = 00CBDDA5268DC1620008DDE1 /* Products */;
 			projectDirPath = "";
@@ -485,26 +482,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		00CBDDB5268DC1D60008DDE1 /* XCRemoteSwiftPackageReference "TPInAppReceipt" */ = {
+		00A16E932BE1E4E5001E643C /* XCRemoteSwiftPackageReference "TPInAppReceipt" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mshibanami/TPInAppReceipt";
+			repositoryURL = "https://github.com/tikhop/TPInAppReceipt.git";
 			requirement = {
-				branch = "make-payload-public";
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.4.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		00CBDDB6268DC1D60008DDE1 /* TPInAppReceipt */ = {
+		00A16E942BE1E4E5001E643C /* TPInAppReceipt */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 00CBDDB5268DC1D60008DDE1 /* XCRemoteSwiftPackageReference "TPInAppReceipt" */;
+			package = 00A16E932BE1E4E5001E643C /* XCRemoteSwiftPackageReference "TPInAppReceipt" */;
 			productName = TPInAppReceipt;
-		};
-		00CBDDB8268DC1D60008DDE1 /* TPInAppReceipt-Objc */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 00CBDDB5268DC1D60008DDE1 /* XCRemoteSwiftPackageReference "TPInAppReceipt" */;
-			productName = "TPInAppReceipt-Objc";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

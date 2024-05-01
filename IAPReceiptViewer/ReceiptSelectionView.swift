@@ -15,7 +15,7 @@ struct ReceiptSelectionView: View {
         Button("Select App including a receipt") {
             onTapSelectReceipt()
         }
-        .padding(100)
+        .frame(minWidth: 300, minHeight: 200)
     }
     
     private func onTapSelectReceipt() {

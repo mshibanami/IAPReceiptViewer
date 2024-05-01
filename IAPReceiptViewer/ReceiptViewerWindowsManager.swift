@@ -80,16 +80,19 @@ private extension InAppReceipt {
         : String(describing: purchases.map(\.html).joined(separator: "<hr>"))
         
         let infoTableHTML = [
-            TableRow("Environment", payload.environment),
-            TableRow("Bundle Identifier", bundleIdentifier),
-            TableRow("App Version", appVersion),
-            TableRow("Opaque Value", Array(payload.opaqueValue)),
-            TableRow("SHA-1 Hash", Array(payload.receiptHash)),
-            TableRow("Original Application Version", originalAppVersion),
-            TableRow("Receipt Creation Date", dateFormatter.string(from: creationDate)),
-            TableRow("Receipt Expiration Date", expirationDate.flatMap { dateFormatter.string(from: $0) } ?? noneHTML),
-            TableRow("Age Rating", ageRating),
-            TableRow("Base64", base64),
+            TableRow("bundleIdentifier: ", bundleIdentifier),
+            TableRow("appVersion: ", appVersion),
+            TableRow("originalAppVersion: ", originalAppVersion),
+            TableRow("originalPurchaseDate: ", originalPurchaseDate.flatMap { dateFormatter.string(from: $0) } ?? noneHTML),
+            TableRow("purchases: ", purchases),
+            TableRow("autoRenewablePurchases: ", autoRenewablePurchases),
+            TableRow("activeAutoRenewableSubscriptionPurchases: ", activeAutoRenewableSubscriptionPurchases),
+            TableRow("expirationDate: ", expirationDate.flatMap { dateFormatter.string(from: $0) } ?? noneHTML),
+            TableRow("hasPurchases: ", hasPurchases),
+            TableRow("hasActiveAutoRenewablePurchases: ", hasActiveAutoRenewablePurchases),
+            TableRow("creationDate: ", creationDate),
+            TableRow("ageRating: ", ageRating),
+            TableRow("base64: ", base64),
         ].makeTableHTML()
         
         return """
