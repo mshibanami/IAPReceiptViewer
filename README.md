@@ -1,13 +1,13 @@
 # IAPReceiptViewer
 
-This is a simple viewer for Apple's encrypted receipts.
+This is an app to browse Apple's encrypted receipts in your apps.
 
-You can get it here: https://github.com/mshibanami/IAPReceiptViewer/releases/
+You can download the app here: https://github.com/mshibanami/IAPReceiptViewer/releases/
 
 
 ## How to use
 
-https://user-images.githubusercontent.com/1333214/124370198-f60b6580-dcb7-11eb-8899-fa193c15f2c2.mov
+https://github.com/mshibanami/IAPReceiptViewer/assets/1333214/1d5760c7-2d37-4912-8c20-85490b0294f9
 
 ## Acknowledgements
 
