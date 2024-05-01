@@ -18,7 +18,7 @@ enum ReceiptDecoder {
         case infoPlistIsUnreadable
         
         var errorDescription: String? {
-            switch (self) {
+            switch self {
             case .urlIsNotFilePath:
                 return "Specified URL is not a file path."
             case .fileIsNotApp:
@@ -56,10 +56,10 @@ enum ReceiptDecoder {
             throw ReceiptDecoderError.receiptNotFound
         }
         
-        return ReceiptDecodingResult(
+        return try ReceiptDecodingResult(
             appURL: appURL,
             receiptURL: receiptURL,
-            receipt: try InAppReceipt(receiptData: Data(contentsOf: receiptURL)))
-        
+            receipt: InAppReceipt(receiptData: Data(contentsOf: receiptURL))
+        )
     }
 }

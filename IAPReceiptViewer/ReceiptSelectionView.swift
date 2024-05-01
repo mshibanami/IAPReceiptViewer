@@ -25,20 +25,20 @@ import TPInAppReceipt
                 }
             }
             .padding(14)
-        .frame(minWidth: 300, minHeight: 200)
-        .onDrop(of: ["public.file-url"], isTargeted: $dragOver) { providers -> Bool in
-            providers.first?.loadDataRepresentation(forTypeIdentifier: "public.file-url", completionHandler: { data, error in
-                guard let data,
-                      let path = String(data: data, encoding: .utf8),
-                      let url = URL(string: path as String) else {
-                    return
-                }
-                Task {
-                    await showReceiptWindow(appURL: url)
-                }
-            })
-            return true
-        }
+            .frame(minWidth: 300, minHeight: 200)
+            .onDrop(of: ["public.file-url"], isTargeted: $dragOver) { providers -> Bool in
+                providers.first?.loadDataRepresentation(forTypeIdentifier: "public.file-url", completionHandler: { data, error in
+                    guard let data,
+                          let path = String(data: data, encoding: .utf8),
+                          let url = URL(string: path as String) else {
+                        return
+                    }
+                    Task {
+                        await showReceiptWindow(appURL: url)
+                    }
+                })
+                return true
+            }
     }
     
     private func onTapSelectReceipt() {

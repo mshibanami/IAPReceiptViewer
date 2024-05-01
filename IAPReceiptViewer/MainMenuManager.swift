@@ -20,21 +20,25 @@ class MainMenuManager {
                     NSMenuItem(
                         title: "Hide App",
                         action: #selector(NSApp.hide(_:)),
-                        keyEquivalent: "h"),
+                        keyEquivalent: "h"
+                    ),
                     NSMenuItem(
                         title: "Hide Others",
                         action: #selector(NSApp.hideOtherApplications(_:)),
                         keyEquivalent: "h",
-                        keyEquivalentModifierMask: [.command, .option]),
+                        keyEquivalentModifierMask: [.command, .option]
+                    ),
                     NSMenuItem(
                         title: "Show All",
                         action: #selector(NSApp.unhideAllApplications(_:)),
-                        keyEquivalent: ""),
+                        keyEquivalent: ""
+                    ),
                     NSMenuItem.separator(),
                     NSMenuItem(
                         title: "Quit App",
                         action: #selector(NSApp.terminate(_:)),
-                        keyEquivalent: "q")
+                        keyEquivalent: "q"
+                    ),
                 ]
             }),
             ("File", { (menu: NSMenu) in
@@ -61,7 +65,7 @@ class MainMenuManager {
                     NSMenuItem.separator(),
                     NSMenuItem(title: "Bring All to Front", action: #selector(NSApplication.arrangeInFront(_:)), keyEquivalent: ""),
                 ]
-            })
+            }),
         ]
         
         for (menuTitle, itemsListFunc) in menuList {

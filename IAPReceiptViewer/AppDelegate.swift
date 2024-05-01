@@ -15,8 +15,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     private var cancellables: Set<AnyCancellable> = []
     
-    func applicationWillFinishLaunching(_ notification: Notification) {
-    }
+    func applicationWillFinishLaunching(_ notification: Notification) {}
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         NSApp.mainMenu = MainMenuManager.shared.mainMenu
@@ -31,7 +30,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         for filename in filenames {
             ReceiptViewerWindowsManager.showWindow(
                 appURL: URL(fileURLWithPath: filename),
-                parentWindow: nil)
+                parentWindow: nil
+            )
         }
     }
     
@@ -40,7 +40,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.styleMask = [.titled, .closable, .resizable, .miniaturizable]
         window.contentViewController = NSHostingController(
             rootView: ReceiptSelectionView()
-                .environment(\.parentWindow, { [weak window] in window }))
+                .environment(\.parentWindow) { [weak window] in window })
         let windowController = NSWindowController(window: window)
         windowController.showWindow(self)
         self.windowController = windowController
