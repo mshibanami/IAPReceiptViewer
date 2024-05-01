@@ -35,7 +35,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
     
-    private func setupWindow() {
+    @MainActor private func setupWindow() {
         let window = NSWindow()
         window.styleMask = [.titled, .closable, .resizable, .miniaturizable]
         window.contentViewController = NSHostingController(
